@@ -8,7 +8,7 @@ class Triangle
   def kind()
     #Further, each side must be larger than 0.
     #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
-    if (#some condition for a false triangle)
+    if false
       raise TriangleError
     else
       if (@side_1 == @side_2) && (@side_2 == @side_3)
