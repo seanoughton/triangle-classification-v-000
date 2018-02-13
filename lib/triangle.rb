@@ -6,6 +6,8 @@ class Triangle
   end
 
   def kind()
+    #Further, each side must be larger than 0.
+    #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
 
     if (@side_1 == @side_2) && (@side_2 == @side_3)
       :equilateral
@@ -20,7 +22,5 @@ class Triangle
 end
 
 class TriangleError < StandardError
-  #Further, each side must be larger than 0.
-  #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
   # triangle error code
 end
