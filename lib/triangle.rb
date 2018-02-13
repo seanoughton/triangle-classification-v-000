@@ -11,11 +11,10 @@ class Triangle
     #An equilateral triangle is a triangle that has three equal sides
     if (@side_1 == @side_2) && (@side_2 == @side_3)
       :equilateral
-    end
-    #An isosceles triangle is a triangle that has two equal sides.
-    if (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
+    elsif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
       :isosceles
     end
+    #An isosceles triangle is a triangle that has two equal sides.
 
     #Scalene triangle: A scalene triangle is a triangle that has no equal sides.
     #returns, as a symbol, its type :equilateral, :isosceles, :scalene
